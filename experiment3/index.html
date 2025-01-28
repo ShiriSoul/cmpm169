@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 3 - Generative Methods</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -20,6 +20,8 @@
 	<!-- Load p5.js library -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="../js/site.js" DEFER></script>
 	<!-- Use me for a JavaScript OOP Project -->
@@ -32,7 +34,7 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 3 - Generative Methods</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
@@ -45,17 +47,47 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>
+					This experiment is similar to experiment 2 with the generative design where we base our code and design off of a free source generative design. This experiment differs in what you are required to make.<br>
+					I chose to meet the requirement for replicating a natural process by doing fractal and recursive patterns and growth and decay to simulate tree branches and leaves growing.<br>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>
+					<b>Imitate</b><br>
+					For this project I took inspiration from the design and code of a generative design we were able to choose from for this assignment.<br>
+					<a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_2_2_4_01" target="_blank">Design Link</a><br>
+					<br>
+					<b>Intergrate</b><br>
+					To start this project my goal was to create a plant growing. I started this by replicating the branching circle design that I based from the reference design.<br>
+					<img src="assets/firsttest1.JPG" width="500"> <br>
+					<img src="assets/test1code.JPG" width="500" style="display: inline-block;"> <img src="assets/test1codeb.JPG" width="500" style="display: inline-block;"> <br>
+					<br>
+					I was practically done with just this alone but I needed to really show  that this is a tree so I decided to add leaves that have a chance to grow touching the branches like real leaves.<br>
+					This approach was easy as I did the same as the branches with small tweaks to adjust it so it doesn't overtake the branches.<br>
+					At this point I was basically done but I went further and adjusted the branch colors to brown to look like branches.<br>
+					<img src="assets/secondtest2.JPG" width="500"> <br>
+					<img src="assets/test2code.JPG" width="500" style="display: inline-block;"> <img src="assets/testcode2b.JPG" width="500" style="display: inline-block;"> <br>
+					<br>
+					<b>Innovate</b><br>
+					I was happy with this project as it was and you can tell there was innovation with the leaves generation as seen under integration.<br>
+					To finish this up we were challenged to add audio to our project to enhance the simulation.<br>
+					I went through some audio files I found but the best was by far this one I found of branches snapping which could sound like a tree growing really fast.<br>
+					<img src="assets/audio1.JPG" width="500"> <br>
+					<img src="assets/audio2.JPG" width="500"> <img src="assets/audio3.JPG" width="500"></p>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>
+					This experiment was really easy to do as it was similar to experiment 2.  I didn't really have an issue with recreating the branching design. I did have an issue turning it into lines so I scrapped that idea.<br>
+					I think this experiment really was fun and interesting as I was able to learn to make a branching circle as well as learning to overlay the green leaves generating design over it which was something I troubleshooted a small bit.<br>
+					I'm quite proud of how this turned out as it looks like a sakura branch growing which is quite nice.<br>
+					I kept a few other implementation designs that I didn't use in this final take as comments, like as clicking will grow the branch from that point to simulate planting seeds and the original green leaves color.
+				</p>
 			</div>
 
 		</section>
