@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 4 - Images, Video, & Sound Art</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 4 - Images, Video, & Sound Art</h1>
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<!-- canvas will be added here -->
+				</div>
+                <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div>
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>
+					This assignment is to create a generative design piece by starting from a reference generative design you pick out and creating your own take on it and adding more. <br>
+					The main goals of this assignment is to imitate, integrate, and innovate. Imitate and integration is to take the reference design and create your own design based on the design and code.<br>
+					Innovating is to go further and add more designs that work together.<br>
+					This experiment focuses on interacting with images, videos, and audio. I chose to play with live video capture.<br>
+					<br>
+					This is my final result<br>
+					<img src="assets/final.png" width="500"> <br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>
+					<b>Imitate</b><br>
+					For this project I took inspiration from the design and code of a generative design we were able to choose from for this assignment.<br>
+					The example I chose from was to take live video and draw and update the drawing in real-time.<br>
+					<a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_4_3_3_02" target="_blank">Design Link</a><br>
+					<br>
+					<b>Intergrate</b><br>
+					To start this project I first implemented my own version of the example design by having my code draw brush strokes like the example but mine works in a circle rather than like the example where it just draws on a canvas.<br>
+					<img src="assets/test0.png" width="500"> <br>
+					<br>
+					As seen in the code below, the format is very similar and clearly based on the example but with my own approach to how it generates the drawing.<br>
+					The code takes what the camera captures and draws what it sees and updates live so if a change is made and captured by the camera, the drawing updates to match that change.<br>
+					<img src="assets/test0a.png" width="1500" style="display: inline-block;"><br>
+					<br>
+					To improve on this project even more, I then changed the canvas to be a square to be more full and complete and the brush strokes thinner which makes the drawing more sketch-like.<br>
+					The code was changed to the pattern to no longer be a circle but rather drawn from left to right.<br>
+					As seen the outcome is very pretty with the colors and the thin lines are much more like a sketch work than painting. The details are also much more noticeable in this version.<br>
+					<img src="assets/test1.png" width="500"> <br>
+					<img src="assets/test1a.png" width="1500" style="display: inline-block;"><br>
+					<br>
+					<b>Innovate</b><br>
+					Above was already some innovation but I wanted to go even further and add something to make the project more interesting and solid than just messy lines.<br>
+					To do this I added my approach to stained glass which was drawing multiple shapes at random and reducing the opacity so the drawing behind the stained glass shapes gets affected by the color.<br>
+					The code below also makes it so when the drawing is updated, the stained glass stays on the top/front layer and pressing the 'R' key will regenerate the stained glass pattern to a new random one and pressing the 'D' key will toggle the stained glass visibility.<br>
+					<img src="assets/test2a.png" width="1500" style="display: inline-block;"><br>
+					<br>
+					Also this code shows the keys for saving a png screen capture of the experiment, the stained glass filter toggle, and regenerating the design of the stained glass.<br>
+					<img src="assets/test2b.JPG" style="display: inline-block;"><br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>
+					This experiment was really easy to do as it was similar to the previous experiments but the challenge was experimenting with live updates.<br>
+					It was a struggle initially to get the drawing to update in real-time from the video capture but I was able to get it working with the circle drawing approach I did instead of the one from the example I based on.<br>
+					Then I simply improved the brush look and added some other generative designs to work along the drawing to make it unique and pretty.
+				</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
