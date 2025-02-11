@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 5 - 3D Graphics</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 5 - 3D Graphics</h1>
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<!-- canvas will be added here -->
+				</div>
+                <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div>
+				<br>
+				<p>
+					Use 'S' key to save a png capture.<br>
+					Use 'R' key to regenerate the line pattern design.<br>
+					Click/Hold Left-Mouse button to change color of design.<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>
+					This experiment has us experiment with 3D graphics such as impossible geometry.<br>
+					There were other options but impossible geometry is what I'm going to do for this experiment.<br>
+					This experiment focuses on interacting with the drawing by moving the mouse and the patterns changing based on the corresponding mouse position.
+					<br>
+					This is my final result<br>
+					<img src="assets/drawing4.png" width="500"> <br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>
+					<b>Imitate</b><br>
+					For this project I took inspiration from the design and code of a generative design we were able to choose from for this assignment.<br>
+					The example I chose from was to generate a pattern and have the mouse position affect the pattern.<br>
+					I chose to imitate this because the lines changing makes it seem almost 3D-like with walls or something being looked at different angles.<br>
+					<a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_2_1_1_01" target="_blank">Design Link</a><br>
+					<br>
+					<b>Intergrate</b><br>
+					To start this project I first implemented my own version of the example design by having my code generate a pattern of lines which will have them change in width and height based on the mouse position.<br>
+					As you can see the implementation turned out just as I wanted.<br>
+					<img src="assets/drawing.png" width="500"> <br>
+					<img src="assets/1testult.png" width="1200" style="display: inline-block;"> <br>
+					<br>
+					Next I wanted to improve the project with something unique so I added this way to change the color based on mouse press.<br>
+					<img src="assets/drawing2.png" width="500"> <br>
+					<img src="assets/2testult.png" width="1200" style="display: inline-block;"><br>
+					<img src="assets/2atestult.JPG"><br>
+					<br>
+					<b>Innovate</b><br>
+					I was quite happy with my integration but it definitely was missing something so to make it more interesting I took from my experiment 2 and implemented a dynamic circle.<br>
+					In experiment 2 I had used rings that grow and decrease but for this I kept it simple and used a solid circle.<br>
+					The circle would change colors like the pattern and grow and decrease based on the mouse's X position.<br>
+					<img src="assets/drawing3.png" width="500"> <br>
+					<img src="assets/test3.JPG"><br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>This experiment was really easy to do as it was similar to the previous experiments but was quite challenging with making a design that looks 3D when it wasn't.<br>
+					I'm quite happy with the result as it is both interactive and fulfills the requirements.<br>
+					The mouse position changing the pattern and circle really doesn't make this effect that makes the design look almost 3D.<br>
+					I can say this project wasn't too difficult once you get started but thinking of an idea to start was the most challenging and after that I was able to achieve everything I wanted.<br>
+					I'm quite happy with this experiment.<br>
+				</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
