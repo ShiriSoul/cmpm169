@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 6 - Grammars & Text Art</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 6 - Grammars & Text Art</h1>
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<!-- canvas will be added here -->
+				</div>
+                <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div>
+				<br>
+				<p>
+					Use 'S' key to save a png capture.<br>
+					Use 'R' key to toggle rgb cycle.<br>
+					Use 'A' key to toggle text transparency.<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>
+					This experiment has us experiment with text and how to adjust and change them to create fun designs.<br>
+					This experiment focuses on mouse positions to adjust the text size and position to sort and mess up the lines from the Art of War I used.<br>
+					<br>
+					This is my final result<br>
+					<img src="assets/finalimg.png" width="500"> <br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>
+					<b>Imitate</b><br>
+					For this project I took inspiration from the design and code of a generative design we were able to choose from for this assignment.<br>
+					The example I chose from was the one below where you can change the word's opacity with the 'A' key and mouse X position will sort the text so from A-Z letters closer to A will be higher and ones closer to Z will be lower.<br>
+					<a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_3_1_3_01" target="_blank">Design Link</a><br>
+					<br>
+					<b>Intergrate</b><br>
+					To start this project I first implemented my own version of the example design by getting my code to also sort based on mouse X position.<br>
+					The 'A' key also does the alpha transparency adjustment.<br>
+					<img src="assets/imitaimg.png" width="500"> <br>
+					<img src="assets/test1.png" style="display: inline-block;"><br>
+					<br>
+					<b>Innovate</b><br>
+					I was quite happy with my integration but now it was time to go further. I added a way to move my text using the mouse Y position too but also change size based on it.<br>
+					This was based on <a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_3_0_01" target="_blank">this design</a> where the mouse X position could be used to change a letter's size.<br>
+					I also adjusted the default color to magenta for something nicer to me and added where the 'R' key would create a color cycle like rgb keyboards.<br>
+					<img src="assets/innovaimg.png" width="500"> <br>
+					<img src="assets/test2.JPG" style="display: inline-block;"><br>
+					<img src="assets/test2a.JPG" style="display: inline-block;"><br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>
+					This experiment was really easy to do.<br>
+					I was quite easily able to imitate the design I liked and it was fun messing around to make the design do more than just sort alphabetically by the X position of the mouse.<br>
+					I had to incorporate if statements like I would in Unity with, if the mouse held then allowed Y position tracking. This was fun since I haven't really got to do that yet for this project.<br>
+					I also had no issue creating the rgb cycle effect which adds that colorful touch. I'm quite happy how this turned out.
+				</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
