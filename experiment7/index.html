@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 7 - Data Visualization & Networks</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 7 - Data Visualization & Networks</h1>
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<!-- canvas will be added here -->
+				</div>
+                <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div>
+				<br>
+				<p>
+					Use 'S' key to save a png capture.<br>
+					Use 'R' key to regenerate bubble chart.<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>
+					This experiment has us experiment with data visualization and apis.<br>
+					<br>
+					This experiment focuses on taking data from an api and creating a generative design using that data.<br>
+					The result of this experiment was a  bubble chart that takes data of the highest fire rate weapons in Valorant from Valorant-API.<br>
+					NOTE: some of the weapons have the wrong fire rate on the API as patches for the game over time and alternative fire rates really affect the result.<br>
+					<br>
+					This is my final result<br>
+					<img src="assets/valorant_bubble_chart.png"> <br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>
+					<b>Imitate</b><br>
+					For this project I took inspiration from the website masterychart.com which has the user input a League of Legends account tag and it will output a bubble chart with all their mastery levels for champions in the game.<br>
+					I wanted to create something that would take data and put them in a bubble chart like that.<br>
+					<img src="assets/masterychart.png" width="500"> <br>
+					<br>
+					<b>Intergrate</b><br>
+					To start this project I first implemented code that would take data from the Valorant-API.<br>
+					As I'm not used to API's this was a challenge to implement but once I saw the console output the data on my local host server, I was able to move onto the next step.<br>
+					<img src="assets/test0.JPG"> <br>
+					<img src="assets/test0a.JPG"><br>
+					<br>
+					Now I simply implemented a barebones draw function to create circles of different sizes that would represent the data.<br>
+					<img src="assets/image.png"> <br>
+					<img src="assets/test1.JPG" width="1500"><br>
+					<br>
+					<b>Innovate</b><br>
+					The project was pretty much done but I took this chance to make the experiment more complete overall by doing little improvements.<br>
+					The biggest improvements were a black background for the canvas and I implemented keys to save and regenerate the bubble chart.<br>
+					I did try to implement alternative data visuals like a bar graph but I wasn't able to figure that out in the limit time.<br>
+					I do believe the integration in itself is innovation as the reference I was imitating was for League of Legends mastery levels while mine used Valorant's gun statistics and it was my first attempt at an API.<br>
+					<img src="assets/test2.JPG"> <br>
+					<br>
+					The result turned out amazing as you can see.<br>
+					<img src="assets/valorant_bubble_chart (1).png"> <br>
+					<br>
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>
+					This experiment was really challenging as it was my first real attempt at using API's.<br>
+					Even though I had a hard time getting started despite knowing what I wanted to create, once I took reference from an old group project and used typescript, I was able to take that knowledge and apply it to this experiment.<br>
+					The old project used yaml and had two typescript files I made with the help of my group mates to create weather scenarios. I took that general knowledge and applied it to Valorant-API.<br>
+					Understanding how to receive data from the API was the hardest part, after I got that it was all downhill as I just had to assign the data to their respective circle that would be drawn to create the bubble chart.<br>
+					This project taught me a lot and I'm quite proud of the result.
+				</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
